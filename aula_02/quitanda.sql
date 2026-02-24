@@ -37,7 +37,7 @@ SELECT * FROM tb_produtos WHERE nome = "banana" AND preco > 20.00;
 SELECT * FROM tb_produtos WHERE nome = "banana" AND preco = 12.50;
 SELECT * FROM tb_produtos WHERE nome != "banana";
 
--- Formatar saída da data
+-- Formatar saída da data e preço
 SELECT	nome,
 		DATE_FORMAT(data_validade, '%d/%m/%Y') AS Data_Validade,
 		CONCAT(' R$ ', FORMAT(preco, 2, 'pt_BR')) AS Preco
