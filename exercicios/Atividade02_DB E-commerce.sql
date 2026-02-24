@@ -69,3 +69,8 @@ SELECT * FROM tb_produtos WHERE avaliacao >= 3;
 
 -- EXTRA 6: Visualizar produtos com avaliação <= 3
 SELECT * FROM tb_produtos WHERE avaliacao <= 3;
+
+-- EXTRA 7: Atualizar campo Avaliacao
+ALTER TABLE tb_produtos MODIFY avaliacao decimal(3,1);
+-- TESTE
+UPDATE tb_produtos SET avaliacao = 10.0 WHERE id_produto = 3;
